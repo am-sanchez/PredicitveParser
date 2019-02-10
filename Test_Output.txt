@@ -1,0 +1,126 @@
+
+Push: $  Push: O
+  Top of stack <-- O $ 
+
+
+Now Reading: program
+
+		Top of stack before aquire is: O
+Pop: O
+Table entry [O,program] = program I var L begin R end.
+
+		Top of stack before aquire is: O
+Pop: O
+Table entry [O,program] = program I var L begin R end.
+PUSH: end. R begin L var I program 
+  Top of stack <-- program I var L begin R end. $ 
+Input: program matches top of stack: program, popping and discarding . . .
+  Top of stack <-- I var L begin R end. $ 
+Remaining Input: a 2 0 1 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: a
+		current Token before aquire is: a
+		Top of stack before aquire is: I
+Pop: I
+Table entry [I,a] = D Z
+PUSH: Z D 
+  Top of stack <-- D Z var L begin R end. $ 
+		current Token before aquire is: a
+		Top of stack before aquire is: D
+Pop: D
+Table entry [D,a] = a
+PUSH: a 
+  Top of stack <-- a Z var L begin R end. $ 
+Input: a matches top of stack: a, popping and discarding . . .
+  Top of stack <-- Z var L begin R end. $ 
+Remaining Input: 2 0 1 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: 2
+		current Token before aquire is: 2
+		Top of stack before aquire is: Z
+Pop: Z
+Table entry [Z,2] = G Z
+PUSH: Z G 
+  Top of stack <-- G Z var L begin R end. $ 
+		current Token before aquire is: 2
+		Top of stack before aquire is: G
+Pop: G
+Table entry [G,2] = 2
+PUSH: 2 
+  Top of stack <-- 2 Z var L begin R end. $ 
+Input: 2 matches top of stack: 2, popping and discarding . . .
+  Top of stack <-- Z var L begin R end. $ 
+Remaining Input: 0 1 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: 0
+		current Token before aquire is: 0
+		Top of stack before aquire is: Z
+Pop: Z
+Table entry [Z,0] = G Z
+PUSH: Z G 
+  Top of stack <-- G Z var L begin R end. $ 
+		current Token before aquire is: 0
+		Top of stack before aquire is: G
+Pop: G
+Table entry [G,0] = 0
+PUSH: 0 
+  Top of stack <-- 0 Z var L begin R end. $ 
+Input: 0 matches top of stack: 0, popping and discarding . . .
+  Top of stack <-- Z var L begin R end. $ 
+Remaining Input: 1 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: 1
+		current Token before aquire is: 1
+		Top of stack before aquire is: Z
+Pop: Z
+Table entry [Z,1] = G Z
+PUSH: Z G 
+  Top of stack <-- G Z var L begin R end. $ 
+		current Token before aquire is: 1
+		Top of stack before aquire is: G
+Pop: G
+Table entry [G,1] = 1
+PUSH: 1 
+  Top of stack <-- 1 Z var L begin R end. $ 
+Input: 1 matches top of stack: 1, popping and discarding . . .
+  Top of stack <-- Z var L begin R end. $ 
+Remaining Input: 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: 5
+		current Token before aquire is: 5
+		Top of stack before aquire is: Z
+Pop: Z
+Table entry [Z,5] = G Z
+PUSH: Z G 
+  Top of stack <-- G Z var L begin R end. $ 
+		current Token before aquire is: 5
+		Top of stack before aquire is: G
+Pop: G
+Table entry [G,5] = 5
+PUSH: 5 
+  Top of stack <-- 5 Z var L begin R end. $ 
+Input: 5 matches top of stack: 5, popping and discarding . . .
+  Top of stack <-- Z var L begin R end. $ 
+Remaining Input: ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  $
+
+
+Now Reading: ;
+		current Token before aquire is: ;
+		Top of stack before aquire is: Z
+Pop: Z
+Table entry [Z,;] = #
+lambda detected, popping stack. . .
+
+New top of stack is: var
+  Top of stack <-- var L begin R end. $ 
+		current Token before aquire is: ;
+		Top of stack before aquire is: var
+Pop: var
+Table entry [,;] = ~
+
+Empty table entry detected, invalid word. . .

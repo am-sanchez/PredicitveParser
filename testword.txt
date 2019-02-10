@@ -1,0 +1,1 @@
+program a 2 0 1 5 ; var a l , b a , c , b a 1 2 : integer ; begin a l = 3 ; b a = 4 ; c = 5 ; print (  literal , a l ) ; print (  literal , c ) ; b a 1 2 = a l * ( b a + 2 * c ) ; print (  literal , b a l 2 ) ; e n d .  

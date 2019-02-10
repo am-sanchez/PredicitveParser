@@ -1,0 +1,18 @@
+program a2015;
+(* This program computers and prints the value
+			of an expression*)
+var
+(* declare variables *)
+	al,		ba,		c, ba12  :integer   ;
+begin
+
+		al		=3 ;
+		ba=		4;
+		 c		=5    ;
+		 print( 'al=', al  )   ;
+	print( ' value of c='   ,  c) ;
+		(* compute the value of the expression *)
+			ba12 = al	*  (ba + 2 *  c )	;
+			print( 'bal2 is equal to ',		bal2 ) ;   (* print the value of bal2*)
+			
+	end. (*end of program*)		

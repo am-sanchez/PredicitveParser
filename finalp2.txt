@@ -1,0 +1,16 @@
+program a2015 ;
+var al , ba , c , ba12 : integer ;
+begin al = 3 ;
+ba = 4 ;
+c = 5 ;
+print ( 
+literal
+, al ) ;
+print ( 
+literal
+, c ) ;
+ba12 = al * ( ba + 2 * c ) ;
+print ( 
+literal
+, bal2 ) ;
+end . 
